@@ -20,3 +20,16 @@ The archetype will create two projects:
   - {artifact id} will be replaced by whatever you name the root artifact.
   - This is the extension project where extensions will be placed.
   - It is possible to add multiple extension projects however they must be added to the activiti-app project.
+
+## License
+
+This project is released under the [Apache License, Version 2.0] (http://www.apache.org/licenses/LICENSE-2.0.html).
+
+## Next Steps
+
+As this is the initial release there are a number of things that still need to be done.  The biggest things are more
+logistical such as:
+
++ Publish the archetype to Maven central.
++ Usage documentation needs to be written and made available.
++ Supplementary documentation like How-to blogs and videos.
