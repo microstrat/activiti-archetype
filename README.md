@@ -9,7 +9,7 @@ to create a base project from which to create extensions to Activiti Enterprise.
 listeners, event listeners, custom REST calls, etc.
 
 The approach is relatively simple and should be usable within the major IDE's.  It has specifically been validated
-within IntelliJ Ultimate 14.1.4/14.1.5 and Eclipse Mars 4.5.0 but should work with any Maven enabled IDE.
+with IntelliJ Ultimate 14.1.4/14.1.5 and Eclipse Mars 4.5.0 but should work with any Maven enabled IDE.
 
 The archetype will create two projects:
 
