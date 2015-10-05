@@ -33,3 +33,4 @@ logistical such as:
 + Publish the archetype to Maven central.
 + Usage documentation needs to be written and made available.
 + Supplementary documentation like How-to blogs and videos.
++ Adding samples to work from.
