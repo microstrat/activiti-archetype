@@ -8,7 +8,7 @@ This is the home of the Activiti Enterprise Archetype.  This is an [Apache Maven
 to create a base project from which to create extensions to Activiti Enterprise.  These extensions can include task
 listeners, event listeners, custom REST calls, etc.
 
-The approach is relatively simple and should be usable within the major IDE's.  It have specifically been validated
+The approach is relatively simple and should be usable within the major IDE's.  It has specifically been validated
 within IntelliJ Ultimate 14.1.4/14.1.5 and Eclipse Mars 4.5.0 but should work with any Maven enabled IDE.
 
 The archetype will create two projects:
