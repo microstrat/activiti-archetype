@@ -4,26 +4,45 @@
 
   <groupId>com.microstrat.activiti</groupId>
   <artifactId>activiti-archetype</artifactId>
-  <version>0.6-SNAPSHOT</version>
+  <version>0.7-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>Activiti Enterprise Archetype</name>
+  <description>
+    An Apache Maven archetype to create a base project from which to create extensions to Activiti Enterprise.
+  </description>
+
+  <url>https://github.com/microstrat/activiti-archetype</url>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Eric Amell</name>
+      <email>eamell@microstrat.com</email>
+      <organization>Micro Strategies</organization>
+      <organizationUrl>http://www.microstrat.com</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <url>https://github.com/microstrat/activiti-archetype.git</url>
+  </scm>
 
   <distributionManagement>
-    <repository>
-      <id>releases</id>
-      <url>http://msinexus.msidev.local/nexus/content/repositories/releases/</url>
-      <uniqueVersion>false</uniqueVersion>
-      <layout>default</layout>
-      <name>MSI Repository</name>
-    </repository>
     <snapshotRepository>
-      <uniqueVersion>true</uniqueVersion>
-      <id>snapshots</id>
-      <name>MSI Snapshot Repository</name>
-      <layout>default</layout>
-      <url>http://msinexus.msidev.local/nexus/content/repositories/snapshots/</url>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
   </distributionManagement>
 
   <build>
@@ -40,6 +59,7 @@
           </execution>
         </executions>
       </plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
@@ -55,6 +75,33 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.3</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>ossrh</serverId>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
       </plugin>
     </plugins>
 
