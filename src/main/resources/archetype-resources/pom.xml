@@ -8,7 +8,7 @@
     <version>${version}</version>
 
     <properties>
-        <activiti.version>${activiti-version}</activiti.version>
+        <activiti.enterprise.version>${activiti-version}</activiti.enterprise.version>
 
         <maven.compiler.source>${java-version}</maven.compiler.source>
         <maven.compiler.target>${java-version}</maven.compiler.target>
@@ -59,17 +59,6 @@
             <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-enterprise-releases</url>
         </repository>
         <repository>
-            <id>alfresco-internal</id>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <name>Alfresco Internal Repository</name>
-            <url>https://artifacts.alfresco.com/nexus/content/groups/internal</url>
-        </repository>
-        <repository>
             <id>activiti-thirdparty</id>
             <releases>
                 <enabled>true</enabled>
@@ -87,14 +76,14 @@
             <dependency>
                 <groupId>${activiti.app.dependencies.groupId}</groupId>
                 <artifactId>activiti-app-dependencies</artifactId>
-                <version>${activiti.version}</version>
+                <version>${activiti.enterprise.version}</version>
                 <type>pom</type>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>com.activiti</groupId>
                 <artifactId>activiti-app</artifactId>
-                <version>${activiti.version}</version>
+                <version>${activiti.enterprise.version}</version>
                 <type>war</type>
             </dependency>
 

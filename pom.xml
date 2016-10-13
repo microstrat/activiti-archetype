@@ -4,7 +4,7 @@
 
   <groupId>com.microstrat.activiti</groupId>
   <artifactId>activiti-archetype</artifactId>
-  <version>0.7-SNAPSHOT</version>
+  <version>0.8-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>Activiti Enterprise Archetype</name>
