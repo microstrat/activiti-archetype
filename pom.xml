@@ -14,6 +14,13 @@
 
   <url>https://github.com/microstrat/activiti-archetype</url>
 
+  <scm>
+    <connection>scm:git:https://github.com/microstrat/activiti-archetype.git</connection>
+    <developerConnection>scm:git:https://github.com/microstrat/activiti-archetype.git</developerConnection>
+    <url>https://github.com/microstrat/activiti-archetype/tree/${project.scm.tag}</url>
+    <tag>master</tag>
+  </scm>
+
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
@@ -29,10 +36,6 @@
       <organizationUrl>http://www.microstrat.com</organizationUrl>
     </developer>
   </developers>
-
-  <scm>
-    <url>https://github.com/microstrat/activiti-archetype.git</url>
-  </scm>
 
   <distributionManagement>
     <snapshotRepository>
