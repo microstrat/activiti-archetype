@@ -4,12 +4,12 @@
 
   <groupId>com.microstrat.activiti</groupId>
   <artifactId>activiti-archetype</artifactId>
-  <version>0.9-SNAPSHOT</version>
+  <version>0.10-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
-  <name>Activiti Enterprise Archetype</name>
+  <name>Alfresco Process Services Archetype</name>
   <description>
-    An Apache Maven archetype to create a base project from which to create extensions to Activiti Enterprise.
+    An Apache Maven archetype to create a base project for Alfresco Process Services extensions.
   </description>
 
   <url>https://github.com/microstrat/activiti-archetype</url>
@@ -83,7 +83,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.5</version>
+        <version>1.6</version>
         <executions>
           <execution>
             <id>sign-artifacts</id>

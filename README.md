@@ -1,7 +1,5 @@
 ![Micro Strategies Logo](http://www.microstrat.com/sites/default/files/Micro_final_log_with_tag_horizontal_gradientSmall_0.jpg)
 
-![Alfresco Logo](https://cdn-www.activiti.org/sites/default/files/styles/contributor_logo/public/logo-alfresco%402x.png?itok=-RUVoXeZ)
-
 # Alfresco Process Services Archetype
 
 This is the home of the Alfresco Process Services Archetype (formerly Activiti Enterprise Archetype).  This is an 
@@ -20,21 +18,40 @@ The archetype will create two projects:
   - {artifact id} will be replaced by whatever you name the root artifact.
   - This is the extension project where extensions will be placed.
   - It is possible to add multiple extension projects however they must be added to the activiti-app project.
+
+# Using this Archetype
+
+To use the Archetype you really only need to know the group ID and the artifact ID:
+
++ Group ID - com.microstrat.activiti
++ Artifact ID - activiti-archetype
+
+## Using on Command Line
+
+A new project can be created from the command line as follows:
+
+```bash
+mvn archetype:generate -DarchetypeCatalog=local -Dfilter=com.microstrat.activiti:activiti-archetype
+```
   
-## Videos
+## Using in Eclipse
 
 + [Activiti Archetype for Eclipse](http://bit.ly/1UhEjIl)
 
-## License
+## Using in IntelliJ
+
+*TODO*
+
+# License
 
 This project is released under the [Apache License, Version 2.0] (http://www.apache.org/licenses/LICENSE-2.0.html).
 
-## Next Steps
+# Next Steps
 
 As this is the initial release there are a number of things that still need to be done.  The biggest things are more
 logistical such as:
 
 + Usage documentation needs to be written and made available.
 + Supplementary documentation like How-to blogs and videos.
-+ Adding samples to work from.
-+ (Optional) Add a runner.
++ Add more samples to work from.
++ Create a separate archetype for the examples to keep the archetype clean (possibly)

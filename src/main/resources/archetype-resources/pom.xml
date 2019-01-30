@@ -7,6 +7,9 @@
     <packaging>pom</packaging>
     <version>${version}</version>
 
+    <name>${artifactId} APS Root</name>
+    <description>Root project for ${artifactId} APS</description>
+
     <properties>
         <activiti.enterprise.version>${activiti-version}</activiti.enterprise.version>
 
